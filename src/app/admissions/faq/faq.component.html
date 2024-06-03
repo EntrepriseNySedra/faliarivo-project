@@ -1,0 +1,41 @@
+<div class="container mt-5 mb-2">
+    <h2 class="text-center">Foire Aux Questions</h2>
+  
+   
+  
+    <!-- Liste des questions et réponses -->
+    <div *ngFor="let faq of faqList" class="accordion mb-1">
+      <div class="card">
+        <div class="card-header" [id]="'heading' + (faq.question | slugify)">
+          <h5 class="mb-0">
+            <div [attr.aria-controls]="'collapse' + (faq.question | slugify)">
+              <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapse' + (faq.question | slugify)" aria-expanded="true">
+                {{ faq.question }}
+              </button>
+            </div>
+          </h5>
+        </div>
+        <div [id]="'collapse' + (faq.question | slugify)" class="collapse" [attr.aria-labelledby]="'heading' + (faq.question | slugify)" data-parent=".accordion">
+          <div class="card-body">
+            {{ faq.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Formulaire pour poser une question -->
+    <!--  <div class="text-center mt-2">
+        <form (submit)="submitQuestion()">
+            <div class="form-group mb-2">
+              <label for="question" class="question-label">Posez votre question :</label>
+              <textarea class="form-control" id="question" name="question" [(ngModel)]="newQuestion" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+     </div>
+    -->
+
+
+  </div>
+  
+  

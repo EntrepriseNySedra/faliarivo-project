@@ -1,0 +1,23 @@
+/* faq.component.css */
+
+.faq {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .answer {
+    margin-bottom: 20px;
+  }
+  
+  .question-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333; /* couleur de texte personnalisée */
+    /* autres styles personnalisés */
+  }
+  

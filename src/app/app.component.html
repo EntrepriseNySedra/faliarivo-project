@@ -1,0 +1,143 @@
+<header>
+      <nav class="navbar navbar-dark bg-dark mb-2">a </nav>
+
+      <div class="logo-bloc">
+        <div class="container-fluid">
+            <a class="logo" href="/" title="UCM">
+                <figure class="logo-img" href="/" title="UCM">
+                    <img src="/assets/images/logo.jpg" alt="UCM">
+                </figure>
+                <div class="slogan mt-3">
+                    <p class="logo-slogan-2">
+                        <span class="big_text">ECOLE DOCTORALE</span>
+                        <span class="red_text">UNIVERSITÉ <br> CATHOLIQUE</span>
+                        <span class="grey_text">DE MADAGASCAR</span>
+                    </p>
+                </div>
+            </a>
+            
+           
+        </div>
+        
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-red p-3 navbar-light">
+        <button class="navbar-toggler navbar-toggler-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-12 px-4">
+                <li class="nav-item px-3" style="font-size: 20px;color: aliceblue;">
+                    <a class="nav-link" routerLink="/" title="Accueil" style="color: aliceblue;">Accueil</a>
+                </li>
+               
+                <li class="nav-item px-3" style="font-size: 20px;color: aliceblue;">
+                    <a class="nav-link" routerLink="/programmes" title="Programmes" style="color: aliceblue;">Programmes</a>
+                </li>
+                
+                <li class="nav-item px-3" style="font-size: 20px;color: aliceblue;">
+                    <a class="nav-link" routerLink="/a-propos" title="À propos de nous" style="color: aliceblue;">À propos de nous</a>
+                </li>
+                
+                <li class="nav-item px-3" style="font-size: 20px;color: aliceblue;">
+                    <a class="nav-link" routerLink="/vie-etudiante" title="Vie étudiante" style="color: aliceblue;">Vie étudiante</a>
+                </li>
+                
+                <li class="nav-item px-3" style="font-size: 20px;color: aliceblue;">
+                    <a class="nav-link" routerLink="/contactez-nous" title="Contactez-nous" style="color: aliceblue;">Contactez-nous</a>
+                </li>
+                
+            
+
+                <li class="nav-item dropdown px-3" style="font-size: 20px" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown2" ngbDropdownToggle style="color: aliceblue;">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" routerLink="/bourse-financement">Bourses et financement</a></li>
+                        <li><a class="dropdown-item" routerLink="/admissions">Admissions</a></li>
+                        <li><a class="dropdown-item" routerLink="/recherche">Recherche</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    
+      
+</header>
+
+<section class="banner">
+   <h1> 🎓 Bienvenue à l'École Doctorale de l'UCM </h1> 
+
+<p> L’École Doctorale de l'Université Catholique de Madagascar vous ouvre ses portes avec enthousiasme et dévouement. En tant que pilier de notre institution, nous incarnons l'excellence académique et la recherche innovante. </p>
+    <a href="/programmes" class="cta-button">Découvrez nos programmes</a>
+  </section>
+
+
+
+<router-outlet></router-outlet>
+
+
+<footer>
+    <div class="footer-link" style="padding: 3%;">
+        <div class="container-fluid" style="">
+            <nav class="content-link">
+                <div class="adresse-footer" style="" >
+                    <a class="logo"  href="/assets/images/footerlogo.svg" title="UCM">
+                        <figure class="logo-img" href="/" title="UCM">
+                            <img src="/assets/images/footerlogo.svg" alt="UCM">
+                        </figure>
+                        <p class="logo-slogan">UNIVERSITÉ<br> CATHOLIQUE<br> DE MADAGASCAR</p>
+                    </a>
+                    <div class="adresse-text">
+                        <p class="adresse">Ambatoroka</p>
+                        <p class="adresse">Antananarivo 101 Madagascar</p>
+                        <p class="phone">Tél: +261 20.22.340.07</p>
+                        <p class="mail">Email: ucm&#64;ucm.mg</p>
+                    </div>
+                </div>
+                <ul class="group-link right-link">
+                    <li><a href="" title="Mentions légales">Mentions légales</a></li>
+                    <li><a href="" title="Accessibilité">Accessibilité</a></li>
+                    <li><a href="" title="FAQ">FAQ</a></li>
+                    <li><a href="" title="Plan du site">Plan du site</a></li>
+                    <li><a href="" title="Contacts">Contacts</a></li>
+                </ul>
+                <ul class="group-link right-link">
+                    <li><a href="" title="Facebook">Facebook</a></li>
+                    <li><a href="" title="Instagram">Instagram</a></li>
+                    <li><a href="" title="Youtube">Youtube</a></li>
+                </ul>
+                <div class="newsletter-footer">
+                    <h2>NEWSLETTER</h2>
+                    <h3>Université Catholique <br>de Madagascar</h3>
+                    <div class="form-bloc">
+                        <form action="" id="newslleter-form">
+                            <p>Restez informé de toutes les actualités nous concernant en vous inscrivant à notre newsletter.</p>
+                            <div class="fieldset">
+                                <input type="text" placeholder="Saisissez votre adresse e-mail" id="user-mail-newsleter">
+                                <button class="submit-bn" id="send-newsleter"><span>S'inscrire</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- /footer link -->
+
+    <!-- footer copyright -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyRight">&copy; 2021 UCM - Tous droits réservés</p>
+            <p class="legacy">L'utilisation de ce site entraine l'acceptation des <a href="" title="Conditions générales d'Utilisation">Conditions générales d'Utilisation</a> et des <a href="" title="Cookies">Cookies</a></p>
+        </div>
+    </div>
+    
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

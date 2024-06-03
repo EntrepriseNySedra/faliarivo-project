@@ -1,0 +1,10 @@
+.btn-darkred {
+    color: #fff;
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.btn-darkred:hover {
+    background-color: #8b0000; /* Assombrit légèrement la couleur au survol */
+    border-color: #8b0000;
+}
